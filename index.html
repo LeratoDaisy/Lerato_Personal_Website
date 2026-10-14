@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lerato Thungo | Junior Software Developer</title>
+  <meta name="description" content="Portfolio of Lerato Thungo, a Junior Software Developer building AI-powered applications with JavaScript." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav-wrap">
+    <nav class="nav container" aria-label="Main">
+      <a href="#home" class="logo">LT<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Lerato Thungo</h1>
+          <h2 class="role">Junior Software Developer</h2>
+          <p class="lead">
+            I build AI-powered software with JavaScript and enjoy turning tricky problems into clear, working solutions.
+            I'm also growing my skills in cybersecurity, and I'm open to new internship and job opportunities.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="assets/cv.pdf" class="btn btn-outline" download>Download CV</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+          <ul class="socials">
+            <li><a href="https://github.com/LeratoDaisy" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/lerato-thungo-55a887313" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:thungolerato@gmail.com">Email</a></li>
+          </ul>
+        </div>
+        <div class="hero-photo reveal">
+          <div class="photo-frame">
+            <img src="assets/profile.jpg" alt="Portrait of Lerato Thungo" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'photo-fallback',textContent:'LT'}))" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="about-grid">
+          <div class="reveal">
+            <p>I'm a Junior Software Developer who trained at the Melsoft Academy AI Software Academy and contributed to the team at Leib Technologies for a short while. I like building software that solves real problems, especially with the help of AI.</p>
+            <p>JavaScript is my main language. My projects include an AI outbound agent system, a fraud detection system and a media literacy coach that checks information using AI.</p>
+            <p>People describe me as a confident presenter and a calm problem solver. I'm also building my cybersecurity knowledge, and I'm looking for a team where I can keep learning and contribute.</p>
+          </div>
+          <ul class="facts reveal">
+            <li><strong>Role</strong><span>Junior Software Developer</span></li>
+            <li><strong>Previously</strong><span>Leib Technologies</span></li>
+            <li><strong>Focus</strong><span>AI software &amp; JavaScript</span></li>
+            <li><strong>Learning</strong><span>Cybersecurity</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2 class="section-title reveal">Skills</h2>
+        <div class="skills-grid">
+          <div class="card reveal">
+            <h3>💻 Technical Skills</h3>
+            <ul class="levels">
+              <li><span>JavaScript</span><em class="lvl strong">Fluent</em></li>
+              <li><span>AI-powered software</span><em class="lvl mid">Hands-on project experience</em></li>
+              <li><span>Cybersecurity</span><em class="lvl basic">Foundational</em></li>
+            </ul>
+          </div>
+          <div class="card reveal">
+            <h3>🤝 Soft Skills</h3>
+            <ul class="levels">
+              <li><span>Presenting</span><em class="lvl strong">Great presenter</em></li>
+              <li><span>Problem solving</span><em class="lvl strong">Strong</em></li>
+              <li><span>Critical thinking</span><em class="lvl strong">Strong</em></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Projects</h2>
+        <div class="projects-grid">
+
+          <article class="card project reveal">
+            <div class="thumb">🤖 AI Agents</div>
+            <h3>AI Outbound Agent System</h3>
+            <p>An AI-powered system of outbound agents that automates outreach, so teams can reach more people with less manual work.</p>
+            <div class="tags small"><span>JavaScript</span><span>AI</span></div>
+            <div class="links">
+              <a href="https://github.com/LeratoDaisy" target="_blank" rel="noopener">Code →</a>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <div class="thumb">🛡️ Fraud Detection</div>
+            <h3>Fraud Detection System</h3>
+            <p>A system that spots suspicious activity and flags possible fraud, helping people and businesses catch problems early.</p>
+            <div class="tags small"><span>JavaScript</span><span>Security</span></div>
+            <div class="links">
+              <a href="https://github.com/LeratoDaisy" target="_blank" rel="noopener">Code →</a>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <div class="thumb">📰 Media Literacy</div>
+            <h3>Media Literacy Coach</h3>
+            <p>An AI coach that helps people check whether information is trustworthy, by verifying claims and explaining the reasoning.</p>
+            <div class="tags small"><span>JavaScript</span><span>AI</span></div>
+            <div class="links">
+              <a href="https://github.com/LeratoDaisy" target="_blank" rel="noopener">Code →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section alt">
+      <div class="container">
+        <h2 class="section-title reveal">Education</h2>
+        <div class="timeline">
+          <div class="t-item reveal">
+            <h3>AI Software Academy</h3>
+            <p class="muted">Melsoft Academy</p>
+            <p>Hands-on training in building AI-powered software.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Certifications</h2>
+        <div class="cert-grid">
+          <div class="card cert reveal">
+            <span class="badge">📜</span>
+            <h3>Google AI Essentials</h3>
+            <p class="muted">Google</p>
+          </div>
+          <div class="card cert reveal">
+            <span class="badge">📜</span>
+            <h3>Software Development</h3>
+            <p class="muted">Certificate</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section alt">
+      <div class="container">
+        <h2 class="section-title reveal">Work Experience</h2>
+        <div class="timeline">
+          <div class="t-item reveal">
+            <h3>Junior Software Developer</h3>
+            <p class="muted">Leib Technologies</p>
+            <p>Contributed to software development as part of a team for a short period.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <h2 class="section-title">Let's Connect</h2>
+          <p>I'm open to internships and junior developer roles. Send me a message and I'll get back to you.</p>
+          <ul class="contact-list">
+            <li>📧 <a href="mailto:thungolerato@gmail.com">thungolerato@gmail.com</a></li>
+            <li>🐙 <a href="https://github.com/LeratoDaisy" target="_blank" rel="noopener">github.com/LeratoDaisy</a></li>
+            <li>💼 <a href="https://www.linkedin.com/in/lerato-thungo-55a887313" target="_blank" rel="noopener">linkedin.com/in/lerato-thungo</a></li>
+          </ul>
+          <a href="assets/cv.pdf" class="btn btn-primary" download>Download CV</a>
+        </div>
+        <form class="card form reveal" id="contactForm">
+          <label>Name<input type="text" name="name" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Lerato Thungo. All rights reserved.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
