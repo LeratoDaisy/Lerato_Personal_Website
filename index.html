@@ -3,243 +3,239 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lerato Thungo | Junior Software Developer</title>
-  <meta name="description" content="Portfolio of Lerato Thungo, a Junior Software Developer building AI-powered applications with JavaScript." />
+  <title>Lerato Thungo | Software Developer</title>
+  <meta name="description" content="Lerato Thungo — software developer building practical full-stack, AI and security-focused products." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
-  <!-- NAVIGATION -->
   <header class="nav-wrap">
-    <nav class="nav container" aria-label="Main">
-      <a href="#home" class="logo">LT<span>.</span></a>
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Lerato Thungo home"><span>LT</span><i>.</i></a>
       <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#experience">Experience</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Stack</a></li>
+        <li><a href="#journey">Journey</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode">🌓</button></li>
+        <li><button class="theme-btn" id="themeBtn" aria-label="Toggle colour theme">☼</button></li>
       </ul>
     </nav>
   </header>
 
   <main>
-
-    <!-- HOME -->
     <section id="home" class="hero">
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
       <div class="container hero-grid">
         <div class="hero-text reveal">
-          <p class="eyebrow">Hello, I'm</p>
-          <h1>Lerato Thungo</h1>
-          <h2 class="role">Junior Software Developer</h2>
-          <p class="lead">
-            I build AI-powered software with JavaScript and enjoy turning tricky problems into clear, working solutions.
-            I'm also growing my skills in cybersecurity, and I'm open to new internship and job opportunities.
-          </p>
+          <div class="status-line"><span class="pulse"></span> Open to opportunities</div>
+          <p class="eyebrow">Software Developer · AI · Security</p>
+          <h1>I build things that <span class="gradient-text">solve real problems.</span></h1>
+          <p class="lead">I'm Lerato — a South African developer who likes turning messy problems into useful software. My work sits at the intersection of full-stack development, AI and cybersecurity.</p>
           <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#work" class="btn btn-primary">Explore my work <span>↘</span></a>
             <a href="assets/cv.pdf" class="btn btn-outline" download>Download CV</a>
-            <a href="#contact" class="btn btn-ghost">Contact Me</a>
           </div>
-          <ul class="socials">
-            <li><a href="https://github.com/LeratoDaisy" target="_blank" rel="noopener">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/lerato-thungo-55a887313" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="mailto:thungolerato@gmail.com">Email</a></li>
-          </ul>
+          <div class="socials">
+            <a href="https://github.com/LeratoDaisy" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/lerato-thungo-55a887313" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="mailto:thungolerato@gmail.com">Email ↗</a>
+          </div>
         </div>
-        <div class="hero-photo reveal">
-          <div class="photo-frame">
-            <img src="assets/profile.jpg" alt="Portrait of Lerato Thungo" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'photo-fallback',textContent:'LT'}))" />
+
+        <div class="hero-visual reveal">
+          <div class="terminal-window">
+            <div class="terminal-top">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="terminal-title">lerato@localhost ~</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="mono-muted">$</span> whoami</p>
+              <p class="terminal-value">Lerato Thungo</p>
+              <p><span class="mono-muted">$</span> focus --current</p>
+              <div class="terminal-tags">
+                <span>full-stack</span><span>AI</span><span>cybersecurity</span>
+              </div>
+              <p><span class="mono-muted">$</span> build --what-matters</p>
+              <p class="terminal-value"><span class="typing">real products</span><span class="caret">_</span></p>
+            </div>
           </div>
+          <div class="floating-card card-project"><span>📦</span><div><strong>Packhouse</strong><small>Fulfilment infrastructure</small></div></div>
+          <div class="floating-card card-stack"><span>⚡</span><div><strong>Next.js</strong><small>+ Supabase + Vercel</small></div></div>
         </div>
       </div>
+      <div class="scroll-cue"><span></span> scroll to explore</div>
     </section>
 
-    <!-- ABOUT -->
     <section id="about" class="section">
       <div class="container">
-        <h2 class="section-title reveal">About Me</h2>
+        <div class="section-kicker reveal">01 / ABOUT</div>
         <div class="about-grid">
-          <div class="reveal">
-            <p>I'm a Junior Software Developer who trained at the Melsoft Academy AI Software Academy and contributed to the team at Leib Technologies for a short while. I like building software that solves real problems, especially with the help of AI.</p>
-            <p>I work across JavaScript and TypeScript, with hands-on experience building full-stack applications using Next.js, Supabase and Vercel. My recent work includes Packhouse, a fulfilment operations platform, alongside AI and security-focused projects.</p>
-            <p>People describe me as a confident presenter and a calm problem solver. I'm also building my cybersecurity knowledge, and I'm looking for a team where I can keep learning and contribute.</p>
+          <div class="about-copy reveal">
+            <h2>I care about the <span class="gradient-text">why</span>, not just the code.</h2>
+            <p>I started in language-focused studies, but technology became the place where my curiosity made the most sense. I enjoy understanding a problem, breaking it down and building something people can actually use.</p>
+            <p>I've trained in AI software development, worked in a team environment at Leib Technologies, and I'm continuing to deepen my full-stack and cybersecurity skills.</p>
+            <p>I'm especially interested in technology inside banking and other high-trust environments — places where good software, automation and security can make everyday work meaningfully better.</p>
           </div>
-          <ul class="facts reveal">
-            <li><strong>Role</strong><span>Junior Software Developer</span></li>
-            <li><strong>Previously</strong><span>Leib Technologies</span></li>
-            <li><strong>Focus</strong><span>Full-stack &amp; AI software</span></li>
-            <li><strong>Learning</strong><span>Cybersecurity</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section alt">
-      <div class="container">
-        <h2 class="section-title reveal">Skills</h2>
-        <div class="skills-grid">
-          <div class="card reveal">
-            <h3>💻 Technical Skills</h3>
-            <ul class="levels">
-              <li><span>JavaScript / TypeScript</span><em class="lvl strong">Hands-on</em></li>
-              <li><span>Next.js / React</span><em class="lvl strong">Hands-on</em></li>
-              <li><span>Supabase / SQL</span><em class="lvl mid">Hands-on</em></li>
-              <li><span>AI-powered software</span><em class="lvl mid">Project experience</em></li>
-              <li><span>Cybersecurity</span><em class="lvl basic">Foundational</em></li>
-            </ul>
-          </div>
-          <div class="card reveal">
-            <h3>🤝 Soft Skills</h3>
-            <ul class="levels">
-              <li><span>Presenting</span><em class="lvl strong">Great presenter</em></li>
-              <li><span>Problem solving</span><em class="lvl strong">Strong</em></li>
-              <li><span>Critical thinking</span><em class="lvl strong">Strong</em></li>
-            </ul>
+          <div class="about-panel reveal">
+            <div class="mini-stat"><span>Currently</span><strong>Building & learning</strong></div>
+            <div class="mini-stat"><span>Core stack</span><strong>TypeScript · Next.js</strong></div>
+            <div class="mini-stat"><span>Data layer</span><strong>Supabase · SQL</strong></div>
+            <div class="mini-stat"><span>Direction</span><strong>Bank tech · Security · AI</strong></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
+    <section id="work" class="section work-section">
       <div class="container">
-        <h2 class="section-title reveal">Projects</h2>
+        <div class="section-kicker reveal">02 / SELECTED WORK</div>
+        <div class="section-heading-row reveal">
+          <h2>Things I've been <span class="gradient-text">building.</span></h2>
+          <p>Real problems, working software, lessons from shipping.</p>
+        </div>
+
         <div class="projects-grid">
-
-          <article class="card project reveal">
-            <div class="thumb">📦 Packhouse</div>
-            <h3>Packhouse Fulfilment Platform</h3>
-            <p>A full-stack fulfilment operations platform for growing online businesses, covering orders, inventory, pick &amp; pack, dispatch and returns.</p>
-            <div class="tags small"><span>Next.js</span><span>Supabase</span><span>TypeScript</span></div>
-            <div class="links">
-              <a href="https://packhouse-zeta.vercel.app/" target="_blank" rel="noopener">Live Demo →</a>
-              <a href="https://github.com/LeratoDaisy/Packhouse" target="_blank" rel="noopener">Code →</a>
+          <article class="project featured reveal">
+            <div class="project-visual packhouse-visual"><span class="visual-icon">📦</span><span class="visual-label">FULFILMENT OPS</span><div class="visual-grid"></div></div>
+            <div class="project-body">
+              <div class="project-meta"><span>01</span><span class="live-dot">● LIVE</span></div>
+              <h3>Packhouse</h3>
+              <p>A full-stack fulfilment operating layer for growing online businesses — orders, inventory, pick &amp; pack, dispatch and returns in one workflow.</p>
+              <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>Vercel</span></div>
+              <div class="links"><a href="https://packhouse-zeta.vercel.app/" target="_blank" rel="noopener">Live product ↗</a><a href="https://github.com/LeratoDaisy/Packhouse" target="_blank" rel="noopener">Source ↗</a></div>
             </div>
           </article>
 
-          <article class="card project reveal">
-            <div class="thumb">🤖 AI Agents</div>
-            <h3>AI Outbound Agent System</h3>
-            <p>An AI-powered system of outbound agents that automates outreach, so teams can reach more people with less manual work.</p>
-            <div class="tags small"><span>JavaScript</span><span>AI</span></div>
-            <div class="links">
-              <a href="https://github.com/LeratoDaisy" target="_blank" rel="noopener">Code →</a>
+          <article class="project reveal">
+            <div class="project-visual ai-visual"><span class="visual-icon">✦</span><span class="visual-label">AI SYSTEMS</span></div>
+            <div class="project-body">
+              <div class="project-meta"><span>02</span><span>EXPERIMENT</span></div>
+              <h3>AI Outbound Agent System</h3>
+              <p>Exploring how AI agents can automate repetitive outreach while keeping workflows structured and useful.</p>
+              <div class="tags"><span>JavaScript</span><span>AI</span><span>Agents</span></div>
+              <div class="links"><a href="https://github.com/LeratoDaisy" target="_blank" rel="noopener">GitHub ↗</a></div>
             </div>
           </article>
 
-          <article class="card project reveal">
-            <div class="thumb">🛡️ Fraud Detection</div>
-            <h3>Fraud Detection System</h3>
-            <p>A system that spots suspicious activity and flags possible fraud, helping people and businesses catch problems early.</p>
-            <div class="tags small"><span>JavaScript</span><span>Security</span></div>
-            <div class="links">
-              <a href="https://github.com/LeratoDaisy" target="_blank" rel="noopener">Code →</a>
+          <article class="project reveal">
+            <div class="project-visual security-visual"><span class="visual-icon">⌁</span><span class="visual-label">SECURITY</span></div>
+            <div class="project-body">
+              <div class="project-meta"><span>03</span><span>SECURITY</span></div>
+              <h3>Fraud Detection System</h3>
+              <p>A project exploring how suspicious activity can be detected and surfaced early to support safer decisions.</p>
+              <div class="tags"><span>JavaScript</span><span>Security</span><span>Detection</span></div>
+              <div class="links"><a href="https://github.com/LeratoDaisy" target="_blank" rel="noopener">GitHub ↗</a></div>
             </div>
           </article>
 
-          <article class="card project reveal">
-            <div class="thumb">📰 Media Literacy</div>
-            <h3>Media Literacy Coach</h3>
-            <p>An AI coach that helps people check whether information is trustworthy, by verifying claims and explaining the reasoning.</p>
-            <div class="tags small"><span>JavaScript</span><span>AI</span></div>
-            <div class="links">
-              <a href="https://github.com/LeratoDaisy" target="_blank" rel="noopener">Code →</a>
+          <article class="project reveal">
+            <div class="project-visual lumora-visual"><span class="visual-icon">✺</span><span class="visual-label">PRODUCT DESIGN</span></div>
+            <div class="project-body">
+              <div class="project-meta"><span>04</span><span>BUILDING</span></div>
+              <h3>Lumora</h3>
+              <p>A private mobile space designed to help families cope with difficult seasons, support one another and preserve meaningful moments.</p>
+              <div class="tags"><span>Expo</span><span>React Native</span><span>Product thinking</span></div>
+              <div class="links"><a href="https://github.com/LeratoDaisy" target="_blank" rel="noopener">More on GitHub ↗</a></div>
             </div>
           </article>
 
+          <article class="project reveal">
+            <div class="project-visual herpath-visual"><span class="visual-icon">↗</span><span class="visual-label">FINANCIAL INCLUSION</span></div>
+            <div class="project-body">
+              <div class="project-meta"><span>05</span><span>HACKATHON</span></div>
+              <h3>HerPath</h3>
+              <p>A women-focused economic empowerment concept exploring practical tools for financial inclusion and opportunity.</p>
+              <div class="tags"><span>Next.js</span><span>Product strategy</span><span>Fintech</span></div>
+              <div class="links"><a href="https://github.com/LeratoDaisy" target="_blank" rel="noopener">More on GitHub ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-visual media-visual"><span class="visual-icon">◎</span><span class="visual-label">AI + TRUST</span></div>
+            <div class="project-body">
+              <div class="project-meta"><span>06</span><span>EXPERIMENT</span></div>
+              <h3>Media Literacy Coach</h3>
+              <p>An AI concept for helping people interrogate claims, assess information and understand why something may or may not be trustworthy.</p>
+              <div class="tags"><span>JavaScript</span><span>AI</span><span>Trust</span></div>
+              <div class="links"><a href="https://github.com/LeratoDaisy" target="_blank" rel="noopener">GitHub ↗</a></div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- EDUCATION -->
-    <section id="education" class="section alt">
+    <section id="skills" class="section">
       <div class="container">
-        <h2 class="section-title reveal">Education</h2>
-        <div class="timeline">
-          <div class="t-item reveal">
-            <h3>AI Software Academy</h3>
-            <p class="muted">Melsoft Academy</p>
-            <p>Hands-on training in building AI-powered software.</p>
-          </div>
+        <div class="section-kicker reveal">03 / TOOLKIT</div>
+        <div class="section-heading-row reveal">
+          <h2>My current <span class="gradient-text">toolkit.</span></h2>
+          <p>Growing depth, not collecting buzzwords.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal"><span class="skill-number">01</span><h3>Build</h3><p>TypeScript, JavaScript, React, Next.js, HTML, CSS</p><div class="skill-line"><span style="--w:88%"></span></div></div>
+          <div class="skill-card reveal"><span class="skill-number">02</span><h3>Ship</h3><p>Supabase, SQL, authentication, RLS, Vercel, GitHub</p><div class="skill-line"><span style="--w:82%"></span></div></div>
+          <div class="skill-card reveal"><span class="skill-number">03</span><h3>Explore</h3><p>AI-powered software, agents, automation and product workflows</p><div class="skill-line"><span style="--w:72%"></span></div></div>
+          <div class="skill-card reveal"><span class="skill-number">04</span><h3>Secure</h3><p>Cybersecurity foundations, secure access and risk-aware thinking</p><div class="skill-line"><span style="--w:62%"></span></div></div>
         </div>
       </div>
     </section>
 
-    <!-- CERTIFICATIONS -->
-    <section id="certifications" class="section">
+    <section id="journey" class="section journey-section">
       <div class="container">
-        <h2 class="section-title reveal">Certifications</h2>
-        <div class="cert-grid">
-          <div class="card cert reveal">
-            <span class="badge">📜</span>
-            <h3>Google AI Essentials</h3>
-            <p class="muted">Google</p>
+        <div class="section-kicker reveal">04 / JOURNEY</div>
+        <div class="journey-grid">
+          <div class="reveal">
+            <h2>Still learning. <span class="gradient-text">Still shipping.</span></h2>
+            <p class="journey-intro">I'm early in my career, and I don't see that as something to hide. I see it as permission to stay curious, ask better questions and build aggressively.</p>
           </div>
-          <div class="card cert reveal">
-            <span class="badge">📜</span>
-            <h3>Software Development</h3>
-            <p class="muted">Certificate</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section alt">
-      <div class="container">
-        <h2 class="section-title reveal">Work Experience</h2>
-        <div class="timeline">
-          <div class="t-item reveal">
-            <h3>Junior Software Developer</h3>
-            <p class="muted">Leib Technologies</p>
-            <p>Contributed to software development as part of a team for a short period.</p>
+          <div class="timeline">
+            <div class="timeline-item reveal"><span class="timeline-dot"></span><span class="timeline-label">Foundation</span><h3>Language &amp; communication</h3><p>Developed a strong foundation in communication, analysis and working with people.</p></div>
+            <div class="timeline-item reveal"><span class="timeline-dot"></span><span class="timeline-label">Technology</span><h3>AI Software Academy</h3><p>Moved into hands-on software development and AI-powered product building.</p></div>
+            <div class="timeline-item reveal"><span class="timeline-dot"></span><span class="timeline-label">Industry</span><h3>Leib Technologies</h3><p>Contributed to software development in a team environment.</p></div>
+            <div class="timeline-item reveal"><span class="timeline-dot"></span><span class="timeline-label">Now</span><h3>Building for the real world</h3><p>Shipping products like Packhouse while deepening full-stack, AI and cybersecurity skills.</p></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="container contact-grid">
-        <div class="reveal">
-          <h2 class="section-title">Let's Connect</h2>
-          <p>I'm open to internships and junior developer roles. Send me a message and I'll get back to you.</p>
-          <ul class="contact-list">
-            <li>📧 <a href="mailto:thungolerato@gmail.com">thungolerato@gmail.com</a></li>
-            <li>🐙 <a href="https://github.com/LeratoDaisy" target="_blank" rel="noopener">github.com/LeratoDaisy</a></li>
-            <li>💼 <a href="https://www.linkedin.com/in/lerato-thungo-55a887313" target="_blank" rel="noopener">linkedin.com/in/lerato-thungo</a></li>
-          </ul>
-          <a href="assets/cv.pdf" class="btn btn-primary" download>Download CV</a>
+    <section class="marquee-section" aria-label="Areas of interest">
+      <div class="marquee"><span>FULL-STACK</span><b>✦</b><span>AI</span><b>✦</b><span>CYBERSECURITY</span><b>✦</b><span>BANK TECH</span><b>✦</b><span>AUTOMATION</span><b>✦</b><span>PRODUCT THINKING</span><b>✦</b><span>FULL-STACK</span><b>✦</b><span>AI</span><b>✦</b><span>CYBERSECURITY</span><b>✦</b><span>BANK TECH</span><b>✦</b></div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-wrap reveal">
+        <div>
+          <div class="section-kicker">05 / CONTACT</div>
+          <h2>Let's build something <span class="gradient-text">useful.</span></h2>
+          <p>I'm open to junior software development, technology, AI and security opportunities where I can learn fast and contribute meaningfully.</p>
+          <div class="contact-links">
+            <a href="mailto:thungolerato@gmail.com">thungolerato@gmail.com ↗</a>
+            <a href="https://www.linkedin.com/in/lerato-thungo-55a887313" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="https://github.com/LeratoDaisy" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
         </div>
-        <form class="card form reveal" id="contactForm">
-          <label>Name<input type="text" name="name" required /></label>
-          <label>Email<input type="email" name="email" required /></label>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row"><label>Name<input type="text" name="name" autocomplete="name" required /></label><label>Email<input type="email" name="email" autocomplete="email" required /></label></div>
           <label>Message<textarea name="message" rows="5" required></textarea></label>
-          <button type="submit" class="btn btn-primary">Send Message</button>
+          <button type="submit" class="btn btn-primary">Start a conversation <span>↗</span></button>
         </form>
       </div>
     </section>
-
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Lerato Thungo. All rights reserved.</p>
-      <a href="#home">Back to top ↑</a>
-    </div>
+    <div class="container"><p>© <span id="year"></span> Lerato Thungo</p><a href="#home">Back to top ↑</a></div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
